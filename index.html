@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,19 @@
     <title>Hello World!</title>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
     <h1>Olá mundo!</h1>
     <p>
         Digite aqui o seu nome: <br>
-        <input type="text">
+        <input type="text" onchange="helloWorld()">
     </p>
+
+    <script>
+        function helloWorld() {
+            window.alert('Hello world!');           
+        }
+    </script>
 </body>
+
 </html>
